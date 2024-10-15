@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff59d;
+    color: #ffbc0e;
+    font-weight: 400;
+    font-size: 20px;
+} 
+
+/* container */
+
+.header{
+    display: grid;
+    grid-template-columns: 40%  50% 10%;
+    align-items: center;
+    background-color: #1b3039;
+    padding: 0.5rem 4rem
+}
+
+/* logo column */
+
+.logo{
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 80px;
+}
+
+/* navigation column */
+
+
+
+/* nav-list */
+
+.navigation {
+    display: grid;
+    justify-content: end;
+}
+
+.nav-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 14px 20px;
+}
+
+.nav-item a {
+    text-decoration: none; /* Quitar el subrayado */
+    color: white; /* Color blanco */
+}
+
+/* buttons column */
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+/* menu button */
+.btn-menu {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* contact button */
+.btn{
+    background-color: white;
+    color:#1b3039;
+    padding: 13px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-menu {
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 991px){
+    .nav-list {
+        display: none;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+}
+
+
+
